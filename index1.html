@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Muhammad Bilal Ur Rehman | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #0073b1;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #0073b1;
+    }
+    h1 {
+      color: white;
+    }
+    img.profile {
+      max-width: 150px;
+      max-height: 200px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #contact a {
+      color: black;
+    }
+    #contact a:hover {
+      color: #0073b1;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    /* Slider */
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+    }
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 20px;
+    }
+    .slide img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .slide-description {
+      margin: 10px 0;
+    }
+    .slide button {
+      background-color: #0073b1;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .slide button:hover {
+      background-color: #005a8d;
+    }
+    .slider-nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .slider-nav button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      font-size: 18px;
+      background: #0073b1;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill-tag {
+      background-color: #0073b1;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .slide img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.png" alt="Muhammad Bilal" class="profile">
+    <h1>Muhammad Bilal Ur Rehman</h1>
+    <p>AI & Software Development | MSc Artificial Intelligence – UK</p>
+    <p>
+      📧 <a href="mailto:muhammadbilalurrehman5@gmail.com">muhammadbilalurrehman5@gmail.com</a> |
+      📱 +44 07988 301049 |
+      <a href="https://linkedin.com/in/muhammad-bilal-ur-rehman-4a0196331" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/mbilalrehman" target="_blank">GitHub</a>
+    </p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>About Me</h2>
+      <p>I am an MSc Artificial Intelligence student currently based in the UK, passionate about solving real-world problems using AI,
+        cloud technologies, and modern software development practices. I specialize in Python programming, NLP, and cloud infrastructure,
+        with hands-on experience in building scalable tools and applications.</p>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <div class="slider-container">
+        <div class="slider" id="projectSlider">
+          <div class="slide">
+            <img src="project1.jpg" alt="AI Recruitment">
+            <div class="slide-description"><strong>AI-Based Recruitment Platform</strong><br>Built using Python and NLP to match CVs with job descriptions. (Xecuters Ltd - UK)</div>
+            <button onclick="window.open('https://github.com/mbilalrehman', '_blank')">View Project</button>
+          </div>
+          <div class="slide">
+            <img src="project2.jpg" alt="Resume Parser">
+            <div class="slide-description"><strong>Resume Parser Tool</strong><br>Built with Python, SpaCy & Regex to extract structured data from resumes.</div>
+            <button onclick="window.open('https://github.com/mbilalrehman', '_blank')">View Project</button>
+          </div>
+          <div class="slide">
+            <img src="project3.jpg" alt="Library System">
+            <div class="slide-description"><strong>Library & Billing Management</strong><br>Desktop app built with Python & Tkinter to manage books & billing.</div>
+            <button onclick="window.open('https://github.com/mbilalrehman', '_blank')">View Project</button>
+          </div>
+          <div class="slide">
+            <img src="project4.jpg" alt="MB Motors">
+            <div class="slide-description"><strong>MB Motors Website</strong><br>Responsive static website for vehicle listing and booking.</div>
+            <button onclick="window.open('https://github.com/mbilalrehman', '_blank')">View Project</button>
+          </div>
+          <div class="slide">
+            <img src="project5.jpg" alt="Music App">
+            <div class="slide-description"><strong>Music Player Mobile App</strong><br>Android app with local playback, playlists & custom UI.</div>
+            <button onclick="window.open('https://github.com/mbilalrehman', '_blank')">View Project</button>
+          </div>
+          <div class="slide">
+            <img src="project6.jpg" alt="AWS Cloud">
+            <div class="slide-description"><strong>Private AWS Cloud Network</strong><br>Configured VPC, EC2, IAM, Subnets & security for secure infra.</div>
+            <button onclick="window.open('https://github.com/mbilalrehman', '_blank')">View Project</button>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <button onclick="moveSlide(-1)">‹</button>
+          <button onclick="moveSlide(1)">›</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">SQL</div>
+        <div class="skill-tag">Java (basic)</div>
+        <div class="skill-tag">HTML/CSS</div>
+        <div class="skill-tag">Bash</div>
+        <div class="skill-tag">SpaCy</div>
+        <div class="skill-tag">Pandas</div>
+        <div class="skill-tag">NumPy</div>
+        <div class="skill-tag">Regex</div>
+        <div class="skill-tag">Scikit-learn</div>
+        <div class="skill-tag">Flask</div>
+        <div class="skill-tag">AWS EC2</div>
+        <div class="skill-tag">VPC</div>
+        <div class="skill-tag">IAM</div>
+        <div class="skill-tag">S3</div>
+        <div class="skill-tag">SSH</div>
+        <div class="skill-tag">Subnetting</div>
+        <div class="skill-tag">Resume Parsing</div>
+        <div class="skill-tag">AI Recruitment</div>
+        <div class="skill-tag">NLP</div>
+        <div class="skill-tag">REST APIs</div>
+        <div class="skill-tag">Git & GitHub</div>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:muhammadbilalurrehman5@gmail.com">muhammadbilalurrehman5@gmail.com</a></p>
+      <p><strong>Phone:</strong> +44 07988 301049</p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/muhammad-bilal-ur-rehman-4a0196331" target="_blank">linkedin.com/in/muhammad-bilal-ur-rehman-4a0196331</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/mbilalrehman" target="_blank">github.com/mbilalrehman</a></p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Muhammad Bilal Ur Rehman. All rights reserved.
+  </footer>
+
+  <script>
+    let currentIndex = 0;
+    const slider = document.getElementById('projectSlider');
+    const slides = document.querySelectorAll('.slide');
+
+    function moveSlide(step) {
+      currentIndex = (currentIndex + step + slides.length) % slides.length;
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+  </script>
+</body>
+</html>
